@@ -8,22 +8,22 @@ Revision        :    14
 
 Heidelberg SVN repository no.: 1312
 Checkin date: Wed, 23 Jun 2021, 13:43:30
-Compiled: Mon, 02 Aug 2021, 10:35:32 ; Host: mendez-notebook
+Compiled: Mon, 29 Aug 2022, 11:42:05 ; Host: mendez-famaf
 Program name: showd1d85
 --------------------------------------------------------------------------------
 
   *** Memory allocated dynamically ***
  complex*16 :          10
- real*8     :         176
+ real*8     :          32
  integer    :           4
  logical    :           2
  complex*8  :           2
- real*4     :          24
- Total   :           1984. Bytes ,       0.00 MB
+ real*4     :           8
+ Total   :            768. Bytes ,       0.00 MB
 --------------------------------------------------------------------------------
 
 gridpop : /home/mendez/github_repositories/my_repositories/quantum_optics/result_lambda_configurations/gridpop
 dvr     : /home/mendez/github_repositories/my_repositories/quantum_optics/result_lambda_configurations/dvr
-output  : /home/mendez/github_repositories/my_repositories/quantum_optics/result_lambda_configurations/den1d_f1
+output  : /home/mendez/github_repositories/my_repositories/quantum_optics/result_lambda_configurations/den1d_f2
 --------------------------------------------------------------------------------
 

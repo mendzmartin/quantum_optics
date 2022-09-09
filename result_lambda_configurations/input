@@ -5,27 +5,28 @@ RUN-SECTION
 	name = result_lambda_configurations
 	propagate
 	rlxunit = au
-	tfinal = 5  tout = 0.1 tpsi = 0.1
+	tfinal = 300  tout = 1 tpsi = 1
 	steps
 	gridpop		# para showd1d
 	pdensity	# particle density file. Useful to compute quantities after run.
 	veigen
 	psi
 	auto
+	time-not-fs
 end-run-section
 OPERATOR-SECTION
 	opname = operator_file
 end-operator-section
 SBASIS-SECTION
-	no-redundancy-check
-	X1 =	10
+	#no-redundancy-check
+	X1 =	3
 end-sbasis-section
 PBASIS-SECTION
-	X1	sin	11	-25.0	25.0	short
+	X1	sin	3	-1.0	1.0	short
 	el  el  3
 end-pbasis-section
 INTEGRATOR-SECTION
-	CMF      	=	0.1,	1.0d-7	#np1	# Constant Mean-Field scheme
+	CMF      	=	1,	1.0d-7	#np1	# Constant Mean-Field scheme
 	RK8/spf  	=	1.0d-7 			#np1	# Runge-Kutta integrator for SPFs
 	SIL 		=   10,     1.0d-7
 end-integrator-section
@@ -37,7 +38,7 @@ INIT_WF-SECTION
 end-init_wf-section
 end-input
 
- -mnd -w -p Delta -100.0 -p omega 1.0 
+ -mnd -w -p Delta -5.0 -p omega 1.0 
 
 #******************************************************************************#
                 ### ------ OPERATOR FILE ------ ###
@@ -56,7 +57,6 @@ HAMILTONIAN-SECTION
 	---------------------------------
 	modes	|	X1		|	el
 	---------------------------------
-	1.0     |   KE   	|    1
 	-Delta	|	1		|	S1&1
 	omega	|	1		|	S1&2
 	omega	|	1		|	S1&3
