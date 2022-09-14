@@ -1,17 +1,19 @@
 
 ******* Array-Dimensions *******
 
- k   :  minkoe, maxkoe       3   16000
- h   :  htmdim, maxhtm      11   16000
- hl  :  hopdim, maxhop       8   16000
- nh  :  minfac, maxfac      12     800
- n   :    ndef, maxdef       0     640
- n   :    npar, maxpar       4    3200
- n   :    nrdf, maxrdf       0      96
- np  : npesopt, maxpes       0     800
- nham:  hamdim, maxham       1      64
- muld: mulddim,maxmuld       1      64
- LMR :    iLMR, maxLMR       0     120
+ k   :  minkoe, maxkoe       5    4000
+ h   :  htmdim, maxhtm      12    4000
+ hl  :  hopdim, maxhop      10    4000
+ nh  :  minfac, maxfac      12     200
+ n   :    ndef, maxdef      85     240
+ n   :    npar, maxpar       4     300
+ n   :    nrdf, maxrdf       0      16
+ np  : npesopt, maxpes       0     100
+ nham:  hamdim, maxham       1      10
+ muld: mulddim,maxmuld       1      10
+ LMR :    iLMR, maxLMR       0      20
+ minnhtmshift,maxnhtmshift     0    10
+ (for minedim, maxedim see log file)
 
 ***** Operator details *****
 
@@ -38,7 +40,7 @@ Mode     DOFs
   1  mulddof2:
    1   2
 
-Information for Hamiltonian : system                                            
+Information for Hamiltonian : system
 
 Total no. of terms      :      1
 No. of correlated terms :      0
@@ -48,7 +50,7 @@ No. of uncorrelated terms for mode   2:     1
 
   Parameters
 PI                      3.141592653590
-Delta              -5.000000000000E+00
+Delta              -1.000000000000E+02
 omega                   1.000000000000
 mass_X1                 1.000000000000
 

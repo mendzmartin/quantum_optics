@@ -1,33 +1,32 @@
 
------- Host: "mendez-famaf" ----------Fri Sep  2 11:20:56 2022
+------ Host: "mendez-notebook" ----------Fri Sep  9 12:26:33 2022
 
  /home/mendez/github_repositories/my_repositories/quantum_optics/result_lambda_configurations
 
- PID = 20033
+ PID = 75083
 
 --------------------------------------------------------------------------------
 ****** Source code version ******
 
 Program Version :     8
-Release         :     5
-Revision        :    14
+Release         :     6
+Revision        :     2
 
-Heidelberg SVN repository no.: 1312
-Checkin date: Wed, 23 Jun 2021, 13:43:30
-Compiled: Mon, 29 Aug 2022, 11:32:04 ; Host: federico-X510UQR
-Program name: mctdh85
+Heidelberg SVN repository no.: 1397
+Checkin date: Wed, 18 May 2022, 11:24:00
+Compiled: Fri, 09 Sep 2022, 12:14:18 ; Host: mendez-notebook
+Program name: mctdh86
 
 Included surfaces: lsth
 
-Default operator-path: 
-/home/federico/Documentos/Programming/source_files/mctdh85.14/operators
+Default operator-path: /home/mendez/MCTDH/mctdh86.2/operators
  ###  time-not-fs   is set!  ###
 --------------------------------------------------------------------------------
 
 ###############                 NEW RUN                  ###############
 
 ******* OPTIONS ******
--mnd -w -p Delta -5.0 -p omega 1.0
+-mnd -w -p Delta -100.0 -p omega 1.0
 
 
 ########################################################################
@@ -71,15 +70,17 @@ autocorrelation function. Use "cross" if these conditions are not fulfilled.
 
 Timing file opened
 
+Parallel timing file opened
+
 ########################################################################
 
  Creating DVR file: /home/mendez/github_repositories/my_repositories/quantum_optics/result_lambda_configurations/dvr
-                                                         Sep  2 11:20:56
+                                                         Sep  9 12:26:33
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
 
-Memory size (used / allocated) (in Mb):      0.860 /    400.201
+Memory size (used / allocated) (in Mb):      0.860 /      4.003
 
 ** Array dimensions **
 
@@ -116,12 +117,12 @@ total array memory in mb     (used):         0.0
 ########################################################################
 
  Creating OPER file: /home/mendez/github_repositories/my_repositories/quantum_optics/result_lambda_configurations/oper
-                                                         Sep  2 11:20:56
+                                                         Sep  9 12:26:33
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
 
-Memory size (used / allocated) (in Mb):      0.862 /    400.203
+Memory size (used / allocated) (in Mb):      0.862 /      4.005
 
 ** Array dimensions **
 
@@ -133,16 +134,17 @@ length of logical      array (used):           2          0.000 MB
 total array memory in mb     (used):         0.0
 
  *** RUNOPER include-array dimensions ***
-k   :  minkoe, maxkoe       3   16000
-h   :  htmdim, maxhtm       8   16000
-hl  :  hopdim, maxhop       8   16000
-nh  :  minfac, maxfac       3     800
-np  : npesopt, maxpes       0     800
-muld: mulddim,maxmuld       1      64
-n   :    ndef, maxdef       0     640
-n   :    npar, maxpar       4    3200
-n   :    nrdf, maxrdf       0      96
-See op.log file for final values.
+k   :  minkoe, maxkoe       5    4000
+h   :  htmdim, maxhtm      11    4000
+hl  :  hopdim, maxhop      10    4000
+nh  :  minfac, maxfac       3     200
+np  : npesopt, maxpes       0     100
+muld: mulddim,maxmuld       1      10
+n   :    ndef, maxdef       0     240
+n   :    npar, maxpar       4     300
+n   :    nrdf, maxrdf       0      16
+minnhtmshift,maxnhtmshift       0      10
+** Preliminary! See op.log file for final values.
 
 ***** Operator details *****
 
@@ -160,7 +162,7 @@ Mode     DOFs
 ########################################################################
 
 Creating RESTART file
-                                                         Sep  2 11:20:56
+                                                         Sep  9 12:26:33
 ########################################################################
 
 
@@ -182,7 +184,7 @@ workidim   :         1
 
 ***** Memory used in WAVEFUNCTION generation *****
 
-Memory size (used / allocated) (in Mb):      0.863 /    400.204
+Memory size (used / allocated) (in Mb):      0.863 /      4.006
 
 ** Array dimensions **
 
@@ -197,13 +199,18 @@ total array memory in mb     (used):         0.0
 **** Reading OPER file ****
 		lambda configurations (three electronics states)
 Created on:
------- Host: "mendez-famaf" ----------Fri Sep  2 11:20:56 2022
+------ Host: "mendez-notebook" ----------Fri Sep  9 12:26:33 2022
 
+
+*** PARAMETER ***
+ veigen : minedim,    maxedim       0      50
+ timing : nsub,       maxsub       38     100
+ eingabe: nreadspf,maxreadspf       0      10
 
 ########################################################################
 
  Propagating Wavefunction
-                                                         Sep  2 11:20:56
+                                                         Sep  9 12:26:33
 ########################################################################
  hopsdim  =         13        0.000 MB
  dgldim   =         27        0.000 MB
@@ -213,17 +220,20 @@ Created on:
  mfsumdim =         54        0.001 MB
  intpsidim=         81        0.001 MB
  intrdim  =         44        0.000 MB
- workcdim =         36        0.001 MB
+ workcdim =        108        0.002 MB
  workrdim =        143        0.001 MB
 
 ***** Memory used in wavefunction PROPAGATION *****
 
-Memory size (used / allocated) (in Mb):      0.868 /    400.209
+Memory size (used / allocated) (in Mb):      0.871 /      4.014
 
 ** Array dimensions **
 
+length of cmplx array of threads (used):          84.          0.001 MB
+length of real  array of threads (used):           0.          0.000 MB
+length of int   array of threads (used):          16.          0.000 MB
 length of psi/dtpsi    array (used):          27          0.000 MB
-length of complex      array (used):         364          0.006 MB
+length of complex      array (used):         436          0.007 MB
 length of real         array (used):         285          0.002 MB
 length of integer      array (used):           6          0.000 MB
 length of logical      array (used):           3          0.000 MB
@@ -232,27 +242,29 @@ total array memory in mb     (used):         0.0
 
 **** Global array sizes ****
 
-Minimum value for maxdim:       2  Present value:     120
-Minimum value for maxsta:       1  Present value:       4
-Minimum value for maxsub:      38  Present value:     400
-Minimum value for maxkoe:       1  Present value:   16000
+Minimum value for maxdim:       2  Present value:       4
+Minimum value for maxsta:       1  Present value:       1
+Minimum value for maxsub:      38  Present value:     100
+Minimum value for maxkoe:       1  Present value:    4000
 
 **** Reading OPER file ****
 		lambda configurations (three electronics states)
 Created on:
------- Host: "mendez-famaf" ----------Fri Sep  2 11:20:56 2022
+------ Host: "mendez-notebook" ----------Fri Sep  9 12:26:33 2022
 
 
 **** RSTINFO: Reading RESTART file ****
-Type : wavefunction, file-version =  8.50140
+Type : wavefunction, file-version =  8.60020
 Created on:
------- Host: "mendez-famaf" ----------Fri Sep  2 11:20:56 2022
+------ Host: "mendez-notebook" ----------Fri Sep  9 12:26:33 2022
 
 
 ***** Calculation type *****
 
 Wavefunction propagation.
 Using Schroedinger picture.
+Using SM parallelisation. Number of threads =   2
+Options: no-funkphi summf2 
 Electronic states in single-set formalism.
 
 ***** Integrator algorithm *****
@@ -291,7 +303,7 @@ Speed       file opened
 Auto        file opened  (once)
 Steps       file opened
 Update      file opened
- time[fs]      300.000
+ time[fs]    30000.000
 
 ***** Integration method *****
 
@@ -302,12 +314,12 @@ Maximum order allowed:   10
 
 Integration method used for the single-particle functions:
 
-Number of successful Lanczos steps:             900
+Number of successful Lanczos steps:           90000
 Number of failed but fixed Lanczos steps:         0
 
 ***** Update times *****
 
-Number of successful update steps:   300
+Number of successful update steps: 30000
 Number of failed update steps:         0
 Mean update time (in au):        1.00000
 Standard deviation (in au):      0.00000
@@ -318,10 +330,10 @@ Program terminated normally.
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :          0.12
-Total system time  [s] :          0.08
-Total time     [h:m:s] :    0 :  0 :  0.20
-Wall  time     [h:m:s] :    0 :  0 :  0
+Total cpu time     [s] :         15.10
+Total system time  [s] :         10.84
+Total time     [h:m:s] :    0 :  0 : 25.94
+Wall  time     [h:m:s] :    0 :  0 : 22
 
------- Host: "mendez-famaf" ----------Fri Sep  2 11:20:56 2022
+------ Host: "mendez-notebook" ----------Fri Sep  9 12:26:55 2022
 

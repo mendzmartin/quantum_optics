@@ -3,23 +3,19 @@
 ****** Source code version ******
 
 Program Version :     8
-Release         :     5
-Revision        :    14
+Release         :     6
+Revision        :     2
 
-Heidelberg SVN repository no.: 1312
-Checkin date: Wed, 23 Jun 2021, 13:43:30
-Compiled: Mon, 29 Aug 2022, 11:42:05 ; Host: mendez-famaf
-Program name: showd1d85
+Heidelberg SVN repository no.: 1397
+Checkin date: Wed, 18 May 2022, 11:24:00
+Compiled: Fri, 09 Sep 2022, 11:44:14 ; Host: mendez-notebook
+Program name: showd1d86
 --------------------------------------------------------------------------------
 
   *** Memory allocated dynamically ***
- complex*16 :          10
  real*8     :          32
- integer    :           4
- logical    :           2
- complex*8  :           2
  real*4     :           8
- Total   :            768. Bytes ,       0.00 MB
+ Total   :      288 Bytes ,       0.00 MB
 --------------------------------------------------------------------------------
 
 gridpop : /home/mendez/github_repositories/my_repositories/quantum_optics/result_lambda_configurations/gridpop

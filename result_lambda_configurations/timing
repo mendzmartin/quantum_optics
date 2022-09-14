@@ -1,15 +1,19 @@
  Subroutine           Calls N         cpu/N             cpu       %cpu      real/N          real  cpu/real
 
- Startup                    1         0.010           0.0100       5.0
- genOPER                    1         0.010           0.0100       5.0
- Density                  601         0.000           0.0100       5.0
- Funk1                    600         0.000           0.0100       5.0
- Funk3                    301         0.000           0.0100       5.0
- Funka                   1500         0.000           0.0100       5.0
+ SIL                    90000         0.000           7.0000      27.0
+ Funka                 150000         0.000           4.7600      18.4
+ Output                 30001         0.000           2.8500      11.0
+ Funk0                  30000         0.000           2.3400       9.0
+ MFields                60001         0.000           1.8000       6.9
+ Funk3                  30001         0.000           1.5600       6.0
+ Funk2                  30001         0.000           0.9100       3.5
+ Density                60001         0.000           0.5900       2.3
+ Funk1                  60000         0.000           0.2600       1.0
+ summf                  60001         0.000           0.0800       0.3
 
-Total (usr,sys,cpu)       0.12     0.08       0.20   (  0h :  0m :  0.20s)
+Total (usr,sys,cpu)      15.10    10.84      25.94   (  0h :  0m : 25.94s)
 
  ---------------------------------------------------------------------------
- ------ Host: "mendez-famaf" ----------Fri Sep  2 11:20:56 2022
+ ------ Host: "mendez-notebook" ----------Fri Sep  9 12:26:55 2022
 
  /home/mendez/github_repositories/my_repositories/quantum_optics/result_lambda_configurations

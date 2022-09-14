@@ -2,7 +2,7 @@ RUN-SECTION
 	name = result_lambda_configurations
 	propagate
 	rlxunit = au
-	tfinal = 300  tout = 1 tpsi = 1
+	tfinal = 30000  tout = 1 tpsi = 1
 	steps
 	gridpop		# para showd1d
 	pdensity	# particle density file. Useful to compute quantities after run.
@@ -10,6 +10,10 @@ RUN-SECTION
 	psi
 	auto
 	time-not-fs
+	usepthreads = 2, summf2,no-funkphi
+	ptiming # Check ptiming file to control overload, and include
+            # no-* keywords accordingly to suppress inefficiently 
+            # parallelized routines.
 end-run-section
 
 OPERATOR-SECTION
