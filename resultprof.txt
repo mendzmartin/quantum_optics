@@ -1,0 +1,548 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 10.64      0.25     0.25                             timout_
+  4.68      0.36     0.11                             lsame_
+  3.40      0.44     0.08                             propagatepsi_
+  2.98      0.51     0.07                             silstep_
+  2.98      0.58     0.07                             strttim_
+  2.55      0.64     0.06                             distributor_
+  2.55      0.70     0.06                             rm1hxxxzz_
+  2.55      0.76     0.06                             zsteqr_
+  2.13      0.81     0.05                             calcha_
+  2.13      0.86     0.05                             qtxxzza_
+  1.70      0.90     0.04                             calchuna_
+  1.70      0.94     0.04                             datout_
+  1.70      0.98     0.04                             dlartg_
+  1.70      1.02     0.04                             fcputime_
+  1.70      1.06     0.04                             matinv_
+  1.70      1.10     0.04                             mfields_
+  1.70      1.14     0.04                             stoptim_
+  1.28      1.17     0.03                             dichtout_
+  1.28      1.20     0.03                             dlamch_
+  1.28      1.23     0.03                             dlasr_
+  1.28      1.26     0.03                             fsemwait_
+  1.28      1.29     0.03                             ilaenv_
+  1.28      1.32     0.03                             outexp1_
+  1.28      1.35     0.03                             propcmfada_
+  1.28      1.38     0.03                             pstrttim_
+  1.28      1.41     0.03                             sum2vxz_
+  1.28      1.44     0.03                             zeromxz_
+  0.85      1.46     0.02                             addmxxzo_
+  0.85      1.48     0.02                             calcgpop_
+  0.85      1.50     0.02                             density_
+  0.85      1.52     0.02                             dlaev2_
+  0.85      1.54     0.02                             dlapy2_
+  0.85      1.56     0.02                             dsteqr_
+  0.85      1.58     0.02                             fpcputime_
+  0.85      1.60     0.02                             fsystime_
+  0.85      1.62     0.02                             funk0_
+  0.85      1.64     0.02                             funka_
+  0.85      1.66     0.02                             hop_
+  0.85      1.68     0.02                             hunphi1ms_
+  0.85      1.70     0.02                             mmtxzz_
+  0.85      1.72     0.02                             mqxczz_
+  0.85      1.74     0.02                             output_
+  0.85      1.76     0.02                             phihphi_
+  0.85      1.78     0.02                             pstoptim_
+  0.85      1.80     0.02                             qtxxdz_
+  0.85      1.82     0.02                             qtxxzz_
+  0.85      1.84     0.02                             wrgrddef_
+  0.85      1.86     0.02                             wrrst_
+  0.85      1.88     0.02                             zgerc_
+  0.85      1.90     0.02                             zheev_
+  0.85      1.92     0.02                             zlarfg_
+  0.43      1.93     0.01                             _init
+  0.43      1.94     0.01                             addhunphi_
+  0.43      1.95     0.01                             autolap_
+  0.43      1.96     0.01                             calcdat_
+  0.43      1.97     0.01                             cpvxz_
+  0.43      1.98     0.01                             denmat_
+  0.43      1.99     0.01                             dlamc3_
+  0.43      2.00     0.01                             dlanst_
+  0.43      2.01     0.01                             dlaset_
+  0.43      2.02     0.01                             dwtphihphi1m_
+  0.43      2.03     0.01                             dznrm2_
+  0.43      2.04     0.01                             errorphi_
+  0.43      2.05     0.01                             funk2_
+  0.43      2.06     0.01                             getvgn_
+  0.43      2.07     0.01                             hunphi_
+  0.43      2.08     0.01                             log2int_
+  0.43      2.09     0.01                             mfsumphi_
+  0.43      2.10     0.01                             mmaxzz_
+  0.43      2.11     0.01                             overmxz_
+  0.43      2.12     0.01                             prefactor_
+  0.43      2.13     0.01                             project_
+  0.43      2.14     0.01                             propa_
+  0.43      2.15     0.01                             psiout_
+  0.43      2.16     0.01                             runsil_
+  0.43      2.17     0.01                             speedout_
+  0.43      2.18     0.01                             submxxz_
+  0.43      2.19     0.01                             sum2qxxz_
+  0.43      2.20     0.01                             writestep_
+  0.43      2.21     0.01                             wrpsidef_
+  0.43      2.22     0.01                             xvxxzzo_
+  0.43      2.23     0.01                             zaxpy_
+  0.43      2.24     0.01                             zeromxd_
+  0.43      2.25     0.01                             zerovxz_
+  0.43      2.26     0.01                             zgemv_
+  0.43      2.27     0.01                             zher2_
+  0.43      2.28     0.01                             zhetd2_
+  0.43      2.29     0.01                             zhetrd_
+  0.43      2.30     0.01                             zlanhe_
+  0.43      2.31     0.01                             zlarf_
+  0.43      2.32     0.01                             zlasr_
+  0.43      2.33     0.01                             zscal_
+  0.43      2.34     0.01                             zswap_
+  0.43      2.35     0.01                             zungtr_
+  0.00      2.35     0.00        1     0.00     0.00  wrversion_
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.43% of 2.35 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     10.6    0.25    0.00                 timout_ [1]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]      4.7    0.11    0.00                 lsame_ [2]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]      3.4    0.08    0.00                 propagatepsi_ [3]
+-----------------------------------------------
+                                                 <spontaneous>
+[4]      3.0    0.07    0.00                 silstep_ [4]
+-----------------------------------------------
+                                                 <spontaneous>
+[5]      3.0    0.07    0.00                 strttim_ [5]
+-----------------------------------------------
+                                                 <spontaneous>
+[6]      2.6    0.06    0.00                 distributor_ [6]
+-----------------------------------------------
+                                                 <spontaneous>
+[7]      2.6    0.06    0.00                 rm1hxxxzz_ [7]
+-----------------------------------------------
+                                                 <spontaneous>
+[8]      2.6    0.06    0.00                 zsteqr_ [8]
+-----------------------------------------------
+                                                 <spontaneous>
+[9]      2.1    0.05    0.00                 calcha_ [9]
+-----------------------------------------------
+                                                 <spontaneous>
+[10]     2.1    0.05    0.00                 qtxxzza_ [10]
+-----------------------------------------------
+                                                 <spontaneous>
+[11]     1.7    0.04    0.00                 calchuna_ [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[12]     1.7    0.04    0.00                 datout_ [12]
+-----------------------------------------------
+                                                 <spontaneous>
+[13]     1.7    0.04    0.00                 dlartg_ [13]
+-----------------------------------------------
+                                                 <spontaneous>
+[14]     1.7    0.04    0.00                 fcputime_ [14]
+-----------------------------------------------
+                                                 <spontaneous>
+[15]     1.7    0.04    0.00                 matinv_ [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[16]     1.7    0.04    0.00                 mfields_ [16]
+-----------------------------------------------
+                                                 <spontaneous>
+[17]     1.7    0.04    0.00                 stoptim_ [17]
+-----------------------------------------------
+                                                 <spontaneous>
+[18]     1.3    0.03    0.00                 dichtout_ [18]
+-----------------------------------------------
+                                                 <spontaneous>
+[19]     1.3    0.03    0.00                 dlamch_ [19]
+-----------------------------------------------
+                                                 <spontaneous>
+[20]     1.3    0.03    0.00                 dlasr_ [20]
+-----------------------------------------------
+                                                 <spontaneous>
+[21]     1.3    0.03    0.00                 fsemwait_ [21]
+-----------------------------------------------
+                                                 <spontaneous>
+[22]     1.3    0.03    0.00                 ilaenv_ [22]
+-----------------------------------------------
+                                                 <spontaneous>
+[23]     1.3    0.03    0.00                 outexp1_ [23]
+-----------------------------------------------
+                                                 <spontaneous>
+[24]     1.3    0.03    0.00                 propcmfada_ [24]
+-----------------------------------------------
+                                                 <spontaneous>
+[25]     1.3    0.03    0.00                 pstrttim_ [25]
+-----------------------------------------------
+                                                 <spontaneous>
+[26]     1.3    0.03    0.00                 sum2vxz_ [26]
+-----------------------------------------------
+                                                 <spontaneous>
+[27]     1.3    0.03    0.00                 zeromxz_ [27]
+-----------------------------------------------
+                                                 <spontaneous>
+[28]     0.9    0.02    0.00                 addmxxzo_ [28]
+-----------------------------------------------
+                                                 <spontaneous>
+[29]     0.9    0.02    0.00                 calcgpop_ [29]
+-----------------------------------------------
+                                                 <spontaneous>
+[30]     0.9    0.02    0.00                 density_ [30]
+-----------------------------------------------
+                                                 <spontaneous>
+[31]     0.9    0.02    0.00                 dlaev2_ [31]
+-----------------------------------------------
+                                                 <spontaneous>
+[32]     0.9    0.02    0.00                 dlapy2_ [32]
+-----------------------------------------------
+                                                 <spontaneous>
+[33]     0.9    0.02    0.00                 dsteqr_ [33]
+-----------------------------------------------
+                                                 <spontaneous>
+[34]     0.9    0.02    0.00                 fpcputime_ [34]
+-----------------------------------------------
+                                                 <spontaneous>
+[35]     0.9    0.02    0.00                 fsystime_ [35]
+-----------------------------------------------
+                                                 <spontaneous>
+[36]     0.9    0.02    0.00                 funk0_ [36]
+-----------------------------------------------
+                                                 <spontaneous>
+[37]     0.9    0.02    0.00                 funka_ [37]
+-----------------------------------------------
+                                                 <spontaneous>
+[38]     0.9    0.02    0.00                 hop_ [38]
+-----------------------------------------------
+                                                 <spontaneous>
+[39]     0.9    0.02    0.00                 hunphi1ms_ [39]
+-----------------------------------------------
+                                                 <spontaneous>
+[40]     0.9    0.02    0.00                 mmtxzz_ [40]
+-----------------------------------------------
+                                                 <spontaneous>
+[41]     0.9    0.02    0.00                 mqxczz_ [41]
+-----------------------------------------------
+                                                 <spontaneous>
+[42]     0.9    0.02    0.00                 output_ [42]
+-----------------------------------------------
+                                                 <spontaneous>
+[43]     0.9    0.02    0.00                 phihphi_ [43]
+-----------------------------------------------
+                                                 <spontaneous>
+[44]     0.9    0.02    0.00                 pstoptim_ [44]
+-----------------------------------------------
+                                                 <spontaneous>
+[45]     0.9    0.02    0.00                 qtxxdz_ [45]
+-----------------------------------------------
+                                                 <spontaneous>
+[46]     0.9    0.02    0.00                 qtxxzz_ [46]
+-----------------------------------------------
+                                                 <spontaneous>
+[47]     0.9    0.02    0.00                 wrgrddef_ [47]
+-----------------------------------------------
+                                                 <spontaneous>
+[48]     0.9    0.02    0.00                 wrrst_ [48]
+-----------------------------------------------
+                                                 <spontaneous>
+[49]     0.9    0.02    0.00                 zgerc_ [49]
+-----------------------------------------------
+                                                 <spontaneous>
+[50]     0.9    0.02    0.00                 zheev_ [50]
+-----------------------------------------------
+                                                 <spontaneous>
+[51]     0.9    0.02    0.00                 zlarfg_ [51]
+-----------------------------------------------
+                                                 <spontaneous>
+[52]     0.4    0.01    0.00                 addhunphi_ [52]
+-----------------------------------------------
+                                                 <spontaneous>
+[53]     0.4    0.01    0.00                 autolap_ [53]
+-----------------------------------------------
+                                                 <spontaneous>
+[54]     0.4    0.01    0.00                 calcdat_ [54]
+-----------------------------------------------
+                                                 <spontaneous>
+[55]     0.4    0.01    0.00                 cpvxz_ [55]
+-----------------------------------------------
+                                                 <spontaneous>
+[56]     0.4    0.01    0.00                 denmat_ [56]
+-----------------------------------------------
+                                                 <spontaneous>
+[57]     0.4    0.01    0.00                 dlamc3_ [57]
+-----------------------------------------------
+                                                 <spontaneous>
+[58]     0.4    0.01    0.00                 dlanst_ [58]
+-----------------------------------------------
+                                                 <spontaneous>
+[59]     0.4    0.01    0.00                 dlaset_ [59]
+-----------------------------------------------
+                                                 <spontaneous>
+[60]     0.4    0.01    0.00                 dwtphihphi1m_ [60]
+-----------------------------------------------
+                                                 <spontaneous>
+[61]     0.4    0.01    0.00                 dznrm2_ [61]
+-----------------------------------------------
+                                                 <spontaneous>
+[62]     0.4    0.01    0.00                 errorphi_ [62]
+-----------------------------------------------
+                                                 <spontaneous>
+[63]     0.4    0.01    0.00                 funk2_ [63]
+-----------------------------------------------
+                                                 <spontaneous>
+[64]     0.4    0.01    0.00                 getvgn_ [64]
+-----------------------------------------------
+                                                 <spontaneous>
+[65]     0.4    0.01    0.00                 hunphi_ [65]
+-----------------------------------------------
+                                                 <spontaneous>
+[66]     0.4    0.01    0.00                 log2int_ [66]
+-----------------------------------------------
+                                                 <spontaneous>
+[67]     0.4    0.01    0.00                 mfsumphi_ [67]
+-----------------------------------------------
+                                                 <spontaneous>
+[68]     0.4    0.01    0.00                 mmaxzz_ [68]
+-----------------------------------------------
+                                                 <spontaneous>
+[69]     0.4    0.01    0.00                 overmxz_ [69]
+-----------------------------------------------
+                                                 <spontaneous>
+[70]     0.4    0.01    0.00                 prefactor_ [70]
+-----------------------------------------------
+                                                 <spontaneous>
+[71]     0.4    0.01    0.00                 project_ [71]
+-----------------------------------------------
+                                                 <spontaneous>
+[72]     0.4    0.01    0.00                 propa_ [72]
+-----------------------------------------------
+                                                 <spontaneous>
+[73]     0.4    0.01    0.00                 psiout_ [73]
+-----------------------------------------------
+                                                 <spontaneous>
+[74]     0.4    0.01    0.00                 runsil_ [74]
+-----------------------------------------------
+                                                 <spontaneous>
+[75]     0.4    0.01    0.00                 speedout_ [75]
+-----------------------------------------------
+                                                 <spontaneous>
+[76]     0.4    0.01    0.00                 submxxz_ [76]
+-----------------------------------------------
+                                                 <spontaneous>
+[77]     0.4    0.01    0.00                 sum2qxxz_ [77]
+-----------------------------------------------
+                                                 <spontaneous>
+[78]     0.4    0.01    0.00                 writestep_ [78]
+-----------------------------------------------
+                                                 <spontaneous>
+[79]     0.4    0.01    0.00                 wrpsidef_ [79]
+-----------------------------------------------
+                                                 <spontaneous>
+[80]     0.4    0.01    0.00                 xvxxzzo_ [80]
+-----------------------------------------------
+                                                 <spontaneous>
+[81]     0.4    0.01    0.00                 zaxpy_ [81]
+-----------------------------------------------
+                                                 <spontaneous>
+[82]     0.4    0.01    0.00                 zeromxd_ [82]
+-----------------------------------------------
+                                                 <spontaneous>
+[83]     0.4    0.01    0.00                 zerovxz_ [83]
+-----------------------------------------------
+                                                 <spontaneous>
+[84]     0.4    0.01    0.00                 zgemv_ [84]
+-----------------------------------------------
+                                                 <spontaneous>
+[85]     0.4    0.01    0.00                 zher2_ [85]
+-----------------------------------------------
+                                                 <spontaneous>
+[86]     0.4    0.01    0.00                 zhetd2_ [86]
+-----------------------------------------------
+                                                 <spontaneous>
+[87]     0.4    0.01    0.00                 zhetrd_ [87]
+-----------------------------------------------
+                                                 <spontaneous>
+[88]     0.4    0.01    0.00                 zlanhe_ [88]
+-----------------------------------------------
+                                                 <spontaneous>
+[89]     0.4    0.01    0.00                 zlarf_ [89]
+-----------------------------------------------
+                                                 <spontaneous>
+[90]     0.4    0.01    0.00                 zlasr_ [90]
+-----------------------------------------------
+                                                 <spontaneous>
+[91]     0.4    0.01    0.00                 zscal_ [91]
+-----------------------------------------------
+                                                 <spontaneous>
+[92]     0.4    0.01    0.00                 zswap_ [92]
+-----------------------------------------------
+                                                 <spontaneous>
+[93]     0.4    0.01    0.00                 zungtr_ [93]
+-----------------------------------------------
+                                                 <spontaneous>
+[94]     0.4    0.01    0.00                 _init [94]
+-----------------------------------------------
+                0.00    0.00       1/1           openlog_ [1062]
+[95]     0.0    0.00    0.00       1         wrversion_ [95]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [94] _init                  [37] funka_                 [75] speedout_
+  [52] addhunphi_             [64] getvgn_                [17] stoptim_
+  [28] addmxxzo_              [38] hop_                    [5] strttim_
+  [53] autolap_               [39] hunphi1ms_             [76] submxxz_
+  [54] calcdat_               [65] hunphi_                [77] sum2qxxz_
+  [29] calcgpop_              [22] ilaenv_                [26] sum2vxz_
+   [9] calcha_                [66] log2int_                [1] timout_
+  [11] calchuna_               [2] lsame_                 [47] wrgrddef_
+  [55] cpvxz_                 [15] matinv_                [78] writestep_
+  [12] datout_                [16] mfields_               [79] wrpsidef_
+  [56] denmat_                [67] mfsumphi_              [48] wrrst_
+  [30] density_               [68] mmaxzz_                [95] wrversion_
+  [18] dichtout_              [40] mmtxzz_                [80] xvxxzzo_
+   [6] distributor_           [41] mqxczz_                [81] zaxpy_
+  [31] dlaev2_                [23] outexp1_               [82] zeromxd_
+  [57] dlamc3_                [42] output_                [27] zeromxz_
+  [19] dlamch_                [69] overmxz_               [83] zerovxz_
+  [58] dlanst_                [43] phihphi_               [84] zgemv_
+  [32] dlapy2_                [70] prefactor_             [49] zgerc_
+  [13] dlartg_                [71] project_               [50] zheev_
+  [59] dlaset_                [72] propa_                 [85] zher2_
+  [20] dlasr_                  [3] propagatepsi_          [86] zhetd2_
+  [33] dsteqr_                [24] propcmfada_            [87] zhetrd_
+  [60] dwtphihphi1m_          [73] psiout_                [88] zlanhe_
+  [61] dznrm2_                [44] pstoptim_              [89] zlarf_
+  [62] errorphi_              [25] pstrttim_              [51] zlarfg_
+  [14] fcputime_              [45] qtxxdz_                [90] zlasr_
+  [34] fpcputime_             [46] qtxxzz_                [91] zscal_
+  [21] fsemwait_              [10] qtxxzza_                [8] zsteqr_
+  [35] fsystime_               [7] rm1hxxxzz_             [92] zswap_
+  [36] funk0_                 [74] runsil_                [93] zungtr_
+  [63] funk2_                  [4] silstep_

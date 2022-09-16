@@ -1,9 +1,9 @@
 
------- Host: "mendez-notebook" ----------Fri Sep  9 12:26:33 2022
+------ Host: "mendez-notebook" ----------Fri Sep 16 11:29:48 2022
 
  /home/mendez/github_repositories/my_repositories/quantum_optics/result_lambda_configurations
 
- PID = 75083
+ PID = 64478
 
 --------------------------------------------------------------------------------
 ****** Source code version ******
@@ -14,7 +14,7 @@ Revision        :     2
 
 Heidelberg SVN repository no.: 1397
 Checkin date: Wed, 18 May 2022, 11:24:00
-Compiled: Fri, 09 Sep 2022, 12:14:18 ; Host: mendez-notebook
+Compiled: Fri, 16 Sep 2022, 11:29:30 ; Host: mendez-notebook
 Program name: mctdh86
 
 Included surfaces: lsth
@@ -75,7 +75,7 @@ Parallel timing file opened
 ########################################################################
 
  Creating DVR file: /home/mendez/github_repositories/my_repositories/quantum_optics/result_lambda_configurations/dvr
-                                                         Sep  9 12:26:33
+                                                         Sep 16 11:29:48
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
@@ -117,7 +117,7 @@ total array memory in mb     (used):         0.0
 ########################################################################
 
  Creating OPER file: /home/mendez/github_repositories/my_repositories/quantum_optics/result_lambda_configurations/oper
-                                                         Sep  9 12:26:33
+                                                         Sep 16 11:29:48
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
@@ -162,7 +162,7 @@ Mode     DOFs
 ########################################################################
 
 Creating RESTART file
-                                                         Sep  9 12:26:33
+                                                         Sep 16 11:29:48
 ########################################################################
 
 
@@ -199,7 +199,7 @@ total array memory in mb     (used):         0.0
 **** Reading OPER file ****
 		lambda configurations (three electronics states)
 Created on:
------- Host: "mendez-notebook" ----------Fri Sep  9 12:26:33 2022
+------ Host: "mendez-notebook" ----------Fri Sep 16 11:29:48 2022
 
 
 *** PARAMETER ***
@@ -210,7 +210,7 @@ Created on:
 ########################################################################
 
  Propagating Wavefunction
-                                                         Sep  9 12:26:33
+                                                         Sep 16 11:29:48
 ########################################################################
  hopsdim  =         13        0.000 MB
  dgldim   =         27        0.000 MB
@@ -250,13 +250,13 @@ Minimum value for maxkoe:       1  Present value:    4000
 **** Reading OPER file ****
 		lambda configurations (three electronics states)
 Created on:
------- Host: "mendez-notebook" ----------Fri Sep  9 12:26:33 2022
+------ Host: "mendez-notebook" ----------Fri Sep 16 11:29:48 2022
 
 
 **** RSTINFO: Reading RESTART file ****
 Type : wavefunction, file-version =  8.60020
 Created on:
------- Host: "mendez-notebook" ----------Fri Sep  9 12:26:33 2022
+------ Host: "mendez-notebook" ----------Fri Sep 16 11:29:48 2022
 
 
 ***** Calculation type *****
@@ -330,10 +330,10 @@ Program terminated normally.
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :         15.10
-Total system time  [s] :         10.84
-Total time     [h:m:s] :    0 :  0 : 25.94
-Wall  time     [h:m:s] :    0 :  0 : 22
+Total cpu time     [s] :         16.78
+Total system time  [s] :         11.10
+Total time     [h:m:s] :    0 :  0 : 27.88
+Wall  time     [h:m:s] :    0 :  0 : 24
 
------- Host: "mendez-notebook" ----------Fri Sep  9 12:26:55 2022
+------ Host: "mendez-notebook" ----------Fri Sep 16 11:30:12 2022
 
