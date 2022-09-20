@@ -12,12 +12,12 @@ function create_2x2_hamiltonian(H11::Float64,H12::Float64)
     # Definimos el hamiltoniano a diagonalizar
     H = Matrix{Float64}(undef, 2, 2) # creamos matriz
     H[:,:] = zeros(2,2)              # inicializamos matriz
-    H[1,1] = α; H[1,2] = β;
+    H[1,1] = H11; H[1,2] = H12;
     H[2,1] = H[1,2] ; H[2,2] = H[1,1];
     return H
 end
 
-function eigenvalues_problem(A_matrix,A_eigenvals,A_eigenvectors)
+function eigenvalues_problem(A_matrix)
     A_eigenvals = copy(eigvals(A_matrix));
     A_eigenvectors = copy(eigvecs(A_matrix));
     return A_eigenvals,A_eigenvectors
