@@ -67,25 +67,28 @@ end
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # funcion evolución de un estado coherente
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-function evolution_coherent_state(  ϕ0::Array{Float64},
-                                    αcoeff::Float64,
-                                    H_eigenvals::Array{Float64},
-                                    H_eigenvectors::Matrix{Float64},
-                                    time_vector::Array{Float64})
+# function evolution_coherent_state(  ϕ0::Array{Float64},
+#                                     αcoeff::BigFloat64,
+#                                     H_eigenvals::Array{Float64},
+#                                     H_eigenvectors::Matrix{Float64},
+#                                     time_vector::Array{Float64})
+
+function evolution_coherent_state(
+    ϕ0,
+    αcoeff,
+    H_eigenvals,
+    H_eigenvectors,
+    time_vector)
 
     # vector columna de coeficientes de descomposición coeff_vector := [a1,a2,a3]
     coeff_vect = lineal_superposition(H_eigenvectors,ϕ0)
-    coeff_vect[:]=αcoeff*coeff_vect[:]
+    coeff_vect.=αcoeff.*coeff_vect
 
-    dim_time = length(time_vector)
-    dim_eigvecs = length(H_eigenvectors[1,:])
-    dim_eigvals = length(H_eigenvals)
+    ψt = zeros(ComplexF64, length(H_eigenvectors[1,:]), length(time_vector));
 
-    ψt = zeros(ComplexF64, dim_eigvecs, dim_time);
-
-    for i in 1:dim_time
-        for j in 1:dim_eigvecs
-            for k in 1:dim_eigvals
+    for i in 1:length(time_vector)
+        for j in 1:length(H_eigenvectors[1,:])
+            for k in 1:length(H_eigenvals)
                 ψt[k,i]=exp(-im*H_eigenvals[k]*(time_vector[i]-time_vector[1]))*coeff_vect[k]*H_eigenvectors[j,k]
             end
         end
@@ -111,23 +114,21 @@ function period_oscillator(time_vector,osc_function,ϵ)
     return ω,T
 end
 
-function population_probability(time_vector,H1_eigenvectors,ψ_t,ϕ,params)
-    # calculamos valores útiles
-    dim_time = length(time_vector)
-    dim_eigvecs = length(H_eigenvectors[1,:])
+function population_probability(time_vector,H_eigenvectors,ψ_t,ϕ0,params)
 
     # definimos vector de probabilidades (población del estado excitado)
-    pϕ=Array{ComplexF64}(undef, dim_time); # vector complejo
-    # vector de coeficientes aj tq |e⟩=∑aj|ϕj⟩, con |ϕj⟩ := base de autoestados de H
-    coeff_vect_ϕ = lineal_superposition(H_eigenvectors,ϕ);
-    coeff_vect_ϕ[:]=params*coeff_vect_ϕ[:];
+    pχ=Array{ComplexF64}(undef, length(time_vector)); # vector complejo
 
-    for i in 1:dim_time
+    # vector de coeficientes aj tq |ϕ0⟩=∑aj|χj⟩, con |χj⟩ := base de autoestados de H
+    coeff_vect_χ = lineal_superposition(H_eigenvectors,ϕ0);
+    coeff_vect_χ.=params.*coeff_vect_χ;
+
+    for i in 1:length(time_vector)
         ψ_t[:,i]=ψ_t[:,i]/norm(ψ_t[:,i]);     # normalizamos la vector de estado
 
-        pϕ[i]=adjoint(coeff_vect_ϕ)*ψ_t[:,i]; # computamos ⟨e|ψt⟩=[∑(aj)*⟨ϕj|][∑bk|ϕk⟩]
-        pϕ[i]=abs(pϕ[i])*abs(pϕ[i])           # computamos |⟨e|ψt⟩|²
+        pχ[i]=adjoint(coeff_vect_χ)*ψ_t[:,i]; # computamos ⟨ϕ0|ψt⟩=[∑(aj)*⟨χj|][∑bk|χk⟩]
+        pχ[i]=abs(pχ[i])*abs(pχ[i])           # computamos |⟨ϕ0|ψt⟩|²
     end
-    return real(pϕ)
+    return real(pχ)
 end
 
